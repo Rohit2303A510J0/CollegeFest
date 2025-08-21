@@ -2,10 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Fest</title>
+    <title>College Fest Schedule</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: #eee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background: #222;
+            color: #fff;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        tbody tr:nth-child(even) {
+            background: rgba(255,255,255,0.05);
+        }
+
+        tbody tr:hover {
+            background: rgba(255,255,255,0.15);
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to College Fest</h1>
+    <h1>College Annual Fest Schedule</h1>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coding Contest</td>
+                    <td>12 Aug</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Cultural Night</td>
+                    <td>12 Aug</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Music Battle</td>
+                    <td>13 Aug</td>
+                    <td>5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Art Exhibition</td>
+                    <td>13 Aug</td>
+                    <td>3:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
